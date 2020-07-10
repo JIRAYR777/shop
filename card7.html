@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>PC LED GFirst</title>
+  </head>
+  <body>
+
+
+  	<!-- header -->
+  	<!-- _____________________________________________ -->
+  	<div class="main-header">
+  		<nav class="bg-secondary pt-2 pb-2">
+		    <div class="container">
+		    	<div class="row">
+		    		<div class="d-none d-lg-block col-lg-3">
+		    			<h4>tel: +37498-25-78-02</h4>
+		    		</div>
+		    		<div class="d-none d-lg-block col-lg-3">
+		    			<h3>Welcome!</h3>
+		    		</div>
+		    	
+		    		<div class="col-12 col-md-4 col-lg-2">
+		    			<select class="custom-select">
+						  <option selected></option>
+						  <option value="1">AM</option>
+						  <option value="2">EN</option>
+						  <option value="3">RU</option>
+						</select>
+		    		</div>
+		    		<div class="col-12 col-md-4 col-lg-2">
+		    			<select class="custom-select">
+						  <option selected></option>
+						  <option value="1">֏</option>
+						  <option value="2">$</option>
+						  <option value="3">₽</option>
+						</select>
+		    		</div>
+		    		
+		    		<div class="d-none d-md-block col-md-4 col-lg-2">
+		    			<button type="button" class="btn btn-success">Wishlist<span class="badge badge-danger">4</span></button>
+		    		</div>
+		    	</div>
+		    </div>
+	    </nav>
+	    <nav class="navbar navbar-light bg-dark">
+		  	<a class="navbar-brand col-lg-6" href="#">
+			    <img src="https://png.pngtree.com/templates_detail/20180928/latter-p-logo--good-for-gaming-logoesport-clan-png_34513.jpg" width="30" height="30" alt="" loading="lazy">
+			</a>
+		  	  	<form class="form-inline my-2 my-lg-0">
+      				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    			</form>
+			  	<div class="btn-group" role="group">
+					<button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    My Account
+					</button>
+					<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+					    <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop" href="#">Login</a>
+					    <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop1" href="#">Registration</a>
+					    <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop" href="#">My Orders</a>
+					    <a class="dropdown-item" data-toggle="modal" data-target="#staticBackdrop" href="#">Account Setting</a>
+					</div>
+				</div>
+		</nav>
+
+
+		<!-- /////////////////////////////////////////////////// -->
+		<!-- Modal-1 -->
+		<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="staticBackdropLabel">Log In</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1">
+				  </div>
+				  <div class="form-group form-check">
+				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+				  </div>
+				  <button type="submit" class="btn btn-success">Submit</button>
+				</form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modal-2 -->
+		<div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="form-group">
+				    <label for="exampleInputNickname1">Nickname</label>
+				    <input type="Nickname" class="form-control" id="exampleInputNickname1">
+				</div>
+		        <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Reset Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1">
+				  </div>
+		      </div>
+		      <button type="Sign" class="btn btn-success">Sign Up</button>
+		    </div>
+		  </div>
+		</div>
+		<!-- /////////////////////////////////////////////////// -->
+
+
+
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="col col-3">
+		        <a class="nav-link text-success" href="home.html">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="col col-3">
+		        <a class="nav-link text-success" href="shop.html">Shop</a>
+		      </li>
+		      <li class="col col-3">
+		        <a class="nav-link text-success" href="about.html">About</a>
+		      </li>
+		      <li class="col col-4">
+		        <a class="nav-link text-success" href="contact.html">Contact Us</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+	</div>
+	<!-- /header -->
+
+
+
+	<!-- content -->
+	<!-- _______________________________________________ -->
+	
+	<div class="container">
+		<div class="col-12">
+			<h2 class="text-success font-weight-bold">Ноутбук Extensa 15</h2>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<div class="row">
+					<div class="col-3">
+						<a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="images/img7.jpg"><img class="img-fluid" src="images/img7.jpg"></a>
+						<a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="images/img7.jpg"><img class="img-fluid" src="images/img7.jpg"></a>
+					</div>
+					<div class="col">
+						<a data-fancybox="gallery" href="">
+							<img class="img-fluid" src="images/img7.jpg">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6">
+				<div class="row">
+					<div class="col-12">
+						<h3 class="font-weight-bold text-danger">$580</h3>
+					</div>
+					<form class="w-100 row" action="">
+						<div class="col-12 col-md-5">
+							<div class="input-group md-3">
+								<div class="input-group-prepend">
+									<span id="inputGroup-sizing-sm" class="input-group-text">Quantity</span>
+								</div>
+								<input class="form-control" type="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="1">
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<input class="btn btn-success" type="submit" value="Add To Cart">
+						</div>
+					</form>
+					<div class="row">
+						<div class="col-12">
+							<p class="font-weight-bold my-2">Options</p>
+						</div>
+						<div class="col-12">
+							<form>
+								<div class="custom-control custom-switch">
+								  <input type="checkbox" class="custom-control-input" id="customSwitch1">
+								  <label class="custom-control-label" for="customSwitch1">Mouse</label>
+								</div>
+								<div class="custom-control custom-switch">
+								  <input type="checkbox" class="custom-control-input" id="customSwitch2">
+								  <label class="custom-control-label" for="customSwitch2">Case</label>
+								</div>
+								<div class="custom-control custom-switch">
+								  <input type="checkbox" class="custom-control-input" id="customSwitch3">
+								  <label class="custom-control-label" for="customSwitch3">Earphones</label>
+								</div>
+							</form>
+						</div>
+						<div class="col-12">
+							<p class="font-weight-bold my-2">Color</p>
+						</div>
+						<div class="col-12">
+							<form>
+								<div class="custom-control custom-radio">
+								  	<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+								  	<label class="custom-control-label" for="customRadio1">Black</label>
+								</div>
+								<div class="custom-control custom-radio">
+								  	<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+								  	<label class="custom-control-label" for="customRadio2">Grey</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+					<p class="col-12">				
+					  	<button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+					    Parameters
+					  	</button>
+					</p>
+					<div class="collapse col-12" id="collapseExample">
+					  	<div class="card card-body">
+							CPU - AMD Ryzen <br>
+							VGA - chipset Radeon R Series <br>
+							SSD - 240 GB <br>
+							Memory - 1.0 TB <br> 
+							VGA type - Dedicated <br>
+							VGA series - nVidia Geforce <br>
+							Regular/gaming - Gaming <br>
+							Color - Black/Grey <br>
+							Availability - In stock <br>
+					 	</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div id="carouselExampleIndicators" class="carousel slide d-none d-lg-block" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	  </ol>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      	<div class="row">
+  				<div class="card col-3 mb-2 mt-2 border border-success" style="width: 18rem;">
+				  	<a href="card1.html"><img src="images/img1.jpg" class="card-img-top"></a>
+				  	<div class="card-body">
+				    	<a href="card1.html"><h4 class="card-title text-center text-success">PC LED GFirst</h4></a>
+				    	<h5 class="card-title text-center text-danger">$870</h5>
+				    	<p class="card-text text-center">PC LED GFirst Advanced R5-162401-1660 (Ryzen 5, 16GB RAM, 240GB SSD, 1TB HDD, GTX1660)</p>
+				    	<a href="#" class="btn btn-success ml-5">Add To Cart</a>
+				  	</div>
+				</div>
+				<div class="card col-3 mb-2 mt-2 border border-success" style="width: 18rem;">
+				  	<a href="card5.html"><img src="images/img5.jpg" class="card-img-top"></a>
+				  	<div class="card-body">
+				    	<a href="card5.html"><h4 class="card-title text-center text-success">Ноутбук Acer</h4></a>
+				    	<h5 class="card-title text-center text-danger">$570</h5>
+				    	<p class="card-text text-center">51-385A 15.6" (Core i3 10110U-2.1GHz, 4GB DDR4, 128GB SSD, Intel UHD 620, Black, Windows 10)</p>
+				    	<a href="#" class="btn btn-success ml-5">Add To Cart</a>
+				  	</div>
+				</div>
+				
+				<div class="card col-3 mb-2 mt-2 border border-success" style="width: 18rem;">
+				  	<a href="card3.html"><img src="images/img3.jpg" class="card-img-top"></a>
+				  	<div class="card-body">
+				    	<a href="card3.html"><h4 class="card-title text-center text-success">PC GFirst</h4></a>
+				    	<h5 class="card-title text-center text-danger">$860</h5>
+				    	<p class="card-text text-center">PC LED GFirst Advanced R5-162401-1660 (Ryzen 5, 16GB RAM, 240GB SSD, 1TB HDD, GTX1660)</p>
+				    	<a href="#" class="btn btn-success ml-5">Add To Cart</a>
+				  	</div>
+				</div>
+				<div class="card col-3 mb-2 mt-2 p-5 border border-success" style="width: 18rem;">
+				  	<a href="card8.html"><img src="images/img8.jpg" class="card-img-top"></a>
+				  	<div class="card-body">
+				    	<a href="card8.html"><h4 class="card-title text-center text-success">Acer Extensa</h4></a>
+				    	<h5 class="card-title text-center text-danger">$540</h5>
+				    	<p class="card-text text-center">Notebook Acer Extensa 15 EX215-21-65RH 15.6" (A6 9220E, 4GB DDR4, 500GB HDD, R4, Black, Linux)</p>
+				    	<a href="#" class="btn btn-success ml-5">Add To Cart</a>
+				  	</div>
+				</div>
+				
+			</div>
+	    </div>
+	    <div class="carousel-item">
+	    	<div class="row">
+		    	<div class="card col-3 mb-2 mt-2 border border-success" style="width: 18rem;">
+				  	<a href="card2.html"><img src="images/img2.jpg" class="card-img-top"></a>
+				  	<div class="card-body">
+				    	<a href="card2.html"><h4 class="card-title text-center text-success">PC LED</h4></a>
+				    	<h5 class="card-title text-center text-danger">$850</h5>
+				    	<p class="card-text text-center">PC LED GFirst Advanced R5-162401-1660 (Ryzen 5, 16GB RAM, 240GB SSD, 1TB HDD, GTX1660)</p>
+				    	<a href="#" class="btn btn-success ml-5">Add To Cart</a>
+			  		</div>
+				</div>
+				<div class="card col-3 mb-2 mt-2 border border-success" style="width: 18rem;">
+				  	<a href="card6.html"><img src="images/img6.jpg" class="card-img-top"></a>
+				  	<div class="card-body">
+				    	<a href="card6.html"><h4 class="card-title text-center text-success">Ноутбук Acer 15</h4></a>
+				    	<h5 class="card-title text-center text-danger">$560</h5>
+				    	<p class="card-text text-center">385A 15.6" (Core i3 10110U-2.1GHz, 4GB DDR4, 128GB SSD, Intel UHD 620, Black, Windows 10)</p>
+				    	<a href="#" class="btn btn-success ml-5">Add To Cart</a>
+				  	</div>
+				</div>
+				<div class="card col-3 mb-2 mt-2 border border-success" style="width: 18rem;">
+				  	<a href="card4.html"><img src="images/img4.jpg" class="card-img-top"></a>
+				  	<div class="card-body">
+				    	<a href="card4.html"><h4 class="card-title text-center text-success">Ноутбук Acer Extensa 15</h4></a>
+				    	<h5 class="card-title text-center text-danger">$840</h5>
+				    	<p class="card-text text-center">EX215-51-385A 15.6" (Core i3 10110U-2.1GHz, 4GB DDR4, 128GB SSD, Intel UHD 620, Black, Windows 10)</p>
+				    	<a href="#" class="btn btn-success ml-5">Add To Cart</a>
+				  	</div>
+				</div>
+				<div class="card col-3 mb-2 mt-2 border border-success" style="width: 18rem;">
+				  	<a href="card7.html"><img src="images/img7.jpg" class="card-img-top"></a>
+				  	<div class="card-body">
+				    	<a href="card7.html"><h4 class="card-title text-center text-success">Ноутбук Extensa 15</h4></a>
+				    	<h5 class="card-title text-center text-danger">$580</h5>
+				    	<p class="card-text text-center">EX215A 15.6" (Core i3 10110U-2.1GHz, 4GB DDR4, 128GB SSD, Intel UHD 620, Black, Windows 10)</p>
+				    	<a href="#" class="btn btn-success ml-5">Add To Cart</a>
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+	<!-- /content -->
+
+
+
+
+	<!-- footer -->
+	<!-- _______________________________________________ -->
+
+	<div class="main-footer pl-3 pr-3 border border-success">
+		<div class="row">
+			<div class="col-12 p-0">
+				<ul class="list-group list-group-horizontal-md w-100 justify-content-around text-uppercase font-weight-bold">
+					<li class="border border-success rounded-0 list-group-item flex-grow-1 text-center bg-secondary">
+						<a class="border border-success bg-light rounded-0 list-group-item flex-grow-1 text-center gg-icon" href="#">CONTACT US</a>
+					</li>
+					<li class="border border-success rounded-0 list-group-item flex-grow-1 text-center bg-secondary">
+						<a class="border border-success bg-light rounded-0 list-group-item flex-grow-1 text-center gg-icon" href="#">LIVE CHAT</a>
+					</li>
+					<li class="border border-success rounded-0 list-group-item flex-grow-1 text-center  bg-secondary">
+						<a class="border border-success bg-light rounded-0 list-group-item flex-grow-1 text-center gg-icon" href="#">SHIPPING</a>
+					</li>
+					<li class="border border-success rounded-0 list-group-item flex-grow-1 text-center bg-secondary">
+						<a class="border border-success bg-light rounded-0 list-group-item flex-grow-1 text-center gg-icon" href="#">TERM & CONDITIONS</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="d-none d-md-flex row justify-content-around">
+			<div class="col-12 col-md-auto flex-grow-1 p-0">
+				<ul class="list-group list-group-flush border border-success">
+					<li class="list-group-item px-2 py-0 border-0 font-weight-bold text-uppercase text-success bg-secondary">
+						<a class="stretched-link text-light" href="#">LINK GROUP 1</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 1</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 2</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 3</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="col-12 col-md-auto flex-grow-1 p-0">
+				<ul class="list-group list-group-flush border border-success">
+					<li class="list-group-item px-2 py-0 border-0 font-weight-bold text-uppercase text-success bg-secondary">
+						<a class="stretched-link text-light" href="#">LINK GROUP 2</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 1</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 2</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 3</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="col-12 col-md-auto flex-grow-1 p-0">
+				<ul class="list-group list-group-flush border border-success">
+					<li class="list-group-item px-2 py-0 border-0 font-weight-bold text-uppercase text-success bg-secondary">
+						<a class="stretched-link text-light" href="#">LINK GROUP 3</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 1</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 2</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 3</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="col-12 col-md-auto flex-grow-1 p-0">
+				<ul class="list-group list-group-flush border border-success">
+					<li class="list-group-item px-2 py-0 border-0 font-weight-bold text-uppercase text-success bg-secondary">
+						<a class="stretched-link text-light" href="#">LINK GROUP 4</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 1</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 2</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 3</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="col-12 col-md-auto flex-grow-1 p-0">
+				<ul class="list-group list-group-flush border border-success">
+					<li class="list-group-item px-2 py-0 border-0 font-weight-bold text-uppercase text-success bg-secondary">
+						<a class="stretched-link text-light" href="#">LINK GROUP 5</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 1</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 2</a>
+					</li>
+					<li class="list-group-item px-2 py-0 border-0 bg-secondary">
+						<a class="stretched-link text-light" href="">Link 3</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="row align-items-center h-100 bg-dark">
+			<div class="col-auto flex-grow-0 py-3 d-none d-md-block"><span class="gg-color">Find us on:</span></div>
+			<div class="col-12 col-md-auto text-center mr-auto">
+				<a class="align-middle p-2 d-inline-block" href="https://www.facebook.com/Jirayr.HakobYan3">
+					<i class="gg-facebook gg-icon"></i>
+				</a>
+				<a class="align-middle p-2 d-inline-block" href="https://www.instagram.com/hakobyanjiro/?hl=ru">
+					<i class="gg-instagram gg-icon"></i>
+				</a>
+
+			</div>
+			<div class="col-12 col-md-auto text-center text-success">
+                ©Jirayr Hakobyan
+            </div>
+		</div>
+	</div>
+
+	<!-- /footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
